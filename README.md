@@ -7,20 +7,20 @@ Millimeter-wave radar sensors sensors produce PCs that are much sparser and nois
 ![MilliNoise acquisition system](/images/millinoise-da.jpg)
 
 ## Scenes Collected
-<table>
+<table width="100%">
     <tr>
-        <td>
+        <td width="33%">
             <table>
                 <tr><td> <h2> <center> Scene 0 </center> </h2> </td></tr>
                 <tr><td> <img src="./images/run_4.gif" width="100%"/> </td></tr>
             </table>
         </td>
-        <td>
+        <td width="33%">
             <table>
                 <tr><td> <h2> <center> Scene 1 </center> </h2> </td></tr>
                 <tr><td> <img src="./images/run_3.gif" width="100%"/> </td></tr>
             </table></td>
-        <td>
+        <td width="33%">
             <table>
                 <tr><td> <h2> <center> Scene 5 </center> </h2> </td></tr>
                 <tr><td> <img src="./images/run_51.gif" width="100%"/> </td></tr>
@@ -28,19 +28,19 @@ Millimeter-wave radar sensors sensors produce PCs that are much sparser and nois
         </td>
     </tr>
     <tr>
-        <td>
+        <td width="33%">
             <table>
                 <tr><td> <h2> <center> Scene 6 </center> </h2> </td></tr>
                 <tr><td> <img src="./images/run_61.gif" width="100%"/> </td></tr>
             </table>
         </td>
-        <td>
+        <td width="33%">
             <table>
                 <tr><td> <h2> <center> Scene 8 </center> </h2> </td></tr>
                 <tr><td> <img src="./images/run_71.gif" width="100%"/> </td></tr>
             </table>
         </td>
-        <td>
+        <td width="33%">
             <table>
                 <tr><td> <h2> <center> Scene 9 </center> </h2> </td></tr>
                 <tr><td> <img src="./images/run_81.gif" width="100%"/> </td></tr>
