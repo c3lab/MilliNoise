@@ -7,12 +7,12 @@ Millimeter-wave radar sensors sensors produce PCs that are much sparser and nois
 ![MilliNoise acquisition system](/images/millinoise-da.jpg)
 
 ## Scenes Collected
-<table style="border: none;">
+<table>
     <tr>
         <td>
             <table>
                 <tr><td> <h2> <center> Scene 0 </center> </h2> </td></tr>
-                <tr><td> <img src="./images/run_4.gif" caption="Scene 0" width="100%"/> </td></tr>
+                <tr><td> <img src="./images/run_4.gif" width="100%"/> </td></tr>
             </table>
         </td>
         <td>
@@ -48,4 +48,3 @@ Millimeter-wave radar sensors sensors produce PCs that are much sparser and nois
         </td>
     </tr>
 </table>
-
