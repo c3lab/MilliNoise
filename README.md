@@ -8,7 +8,7 @@ Millimeter-wave radar sensors sensors produce PCs that are much sparser and nois
 
 ## Scenes Collected
 <!-- Adapt table size to page width-->
-<table>
+<table width="33%">
     <tr>
         <td>
             <table>
