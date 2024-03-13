@@ -28,7 +28,6 @@ def dict_dataset(path):
             "compress" not in p and \
             "scene" not in p and \
             os.path.isdir(os.path.join(path, p)): 
-            # print(p.replace('run_', ''))
             x = str(int(p.replace('run_', '')))
             paths[x] = "run_"+x
     return paths
@@ -36,27 +35,20 @@ def dict_dataset(path):
 def load_dataset(path_to_json, datasets, dataset_index, filename="/dataset_run_4.json", verbose=False):
     if verbose: print(" Loading: ", datasets[dataset_index])
     data = open_json(path_to_json, datasets[dataset_index], filename=filename, verbose=verbose)
-    # obstacles = open_json(path_to_json,"obstacles_scene"+str(data["scene_ID"])+".json")
-
-    # # Translate the obstacles in the inertial reference frame
-    # obstacles = np.array([np.subtract(obstacles['x'],3), np.subtract(obstacles['y'],2.7),obstacles['z']]).T
 
     # Load Poses
     poses = np.vstack(data["data_pose"])
 
     #Load mmWave Data (organised by timestamp)
     mmw_readings = [np.atleast_2d(v) for v in data["data_mmwave"]]
-    # mmw_readings_np = np.vstack(mmw_readings)
     abs_mmw = apply_rototranslation(copy.deepcopy(mmw_readings), poses, offset_x=0, offset_y=0)
 
-    # Sometimes poses contain useless information, so we remove them
-    # poses = np.subtract(poses[:len(mmw_readings),:], [VIC_OFF_X, VIC_OFF_Y, 0.])
     return poses, abs_mmw, mmw_readings, data
 
 
 def open_json(path_to_run, run, filename="/dataset_run_4.json",  verbose=True):
     if verbose: print(" Loading Dataset: ", path_to_run, run)
-    # json_path = path_to_run+run.replace('_', '')+"/dataset_"+run+".json"
+
     json_path = path_to_run+run+filename
     json_path = os.path.join(os.getcwd(), json_path)
     with open(json_path) as json_file:
@@ -73,17 +65,9 @@ def apply_rototranslation(mmw_readings, poses, offset_x=VIC_OFF_X, offset_y=VIC_
     
     
     # Compute Pointcloud Transformation
-    # to_global = np.eye(4)
     abs_mmw = []
     for pc_o, pose in zip(np.copy(mmw_readings), np.copy(poses)):
         pc = pc_o[:, :3]
-
-        # # pc = np.hstack( [ pc, np.ones( (pc_o.shape[0], 1) ) ]).T
-        # # pose[:2] = np.subtract(pose[:2], [offset_x, offset_y])
-        # # R = Rotation.from_euler('XYZ', [0,0, pose[2]]).as_matrix()
-        # # to_global[:3, :3] = R
-        # # to_global[:3, 3] = [pose[0], pose[1], 0.1]
-        # # pc = np.matmul(to_global, pc).T
 
         pc = Rotation.from_euler('XYZ', [0,0, pose[2]]).apply(pc)
         pc = np.add(pc, [pose[0]-offset_x, pose[1]-offset_y, 0.1])
@@ -122,7 +106,6 @@ def plot_scene(point_cloud,
     if np.shape(point_cloud)[1] > 3:
         colors = colors if len(colors) > 0 else point_cloud[:, 3]
     else: colors ='#689b64'
-    # ax.scatter(point_cloud[:, 0], point_cloud[:, 1], point_cloud[:, 2], s=pc_size, marker='.', c='#689b64')
     ax.scatter(point_cloud[:, 0], point_cloud[:, 1], point_cloud[:, 2], s=pc_size, marker='.', c=colors)
     
     if len(fake_points) > 0:
@@ -165,18 +148,13 @@ def plot_2dscene(point_cloud,
     ax.set_xticks([])
     ax.set_yticks([])
     ax.grid(False)
-    # ax.set_zlabel('Z')
     ax.set_xlim([min_xlim, max_xlim])
     ax.set_ylim([min_ylim, max_ylim])
-    # ax.set_zlim([0, 1.5])
-    # ax.view_init(elev=90, azim=180)
 
     if np.shape(point_cloud)[1] > 3:
         colors = colors if len(colors) > 0 else point_cloud[:, 3]
     else: colors ='#689b64'
-    # ax.scatter(point_cloud[:, 0], point_cloud[:, 1], point_cloud[:, 2], s=pc_size, marker='.', c='#689b64')
-    # ax.scatter(point_cloud[:, 0], point_cloud[:, 1], s=pc_size, marker='.', c=colors)
-    ax.scatter(point_cloud[:, 0], point_cloud[:, 1], s=pc_size, marker='.', c='#D3BD0F')
+    ax.scatter(point_cloud[:, 0], point_cloud[:, 1], s=pc_size, marker='.', c=colors)
     
     if len(fake_points) > 0:
         ax.scatter(fake_points[:, 0], fake_points[:, 1], s=fake_pc_size, marker='.', c='#44546a')
@@ -215,7 +193,6 @@ def update_refer_frame(mmw_readings, poses, offset_x=VIC_OFF_X, offset_y=VIC_OFF
         pc = np.add(pc, [(pose[0]-offset_x), (pose[1]-offset_y), 0.1])
         pc = np.matmul(pc, Rotation.from_euler('XYZ', [0., 0., pose[2]]).as_matrix())
 
-        # pc_o[:, :3] = pc[:, :3]
         abs_mmw.append(pc)
 
     abs_mmw = np.vstack(abs_mmw)
@@ -253,7 +230,6 @@ def obstacles_filter(abs_mmw, pos, dims, tops, offset_x=VIC_OFF_X, offset_y=VIC_
     i = 0
     for i in range(len(pos)):
         yaw_off = np.pi/2 if "vicon/Obstacle" in tops[i] and not("vicon/ObstacleMonitor" in tops[i]) else 0
-        # print(" obs: ", tops[i], "pos(t)", pos[i], " IS TRUE: ", ("vicon/Obstacle" in tops[i] and not("vicon/ObstacleMonitor" in tops[i])), " offset: ", yaw_off)
         t = [[ 
             -(pos[i][0] - VIC_OFF_X), -(pos[i][1] - VIC_OFF_Y), (pos[i][2] + yaw_off)
         ]]*(len(mmw_t))
@@ -274,9 +250,6 @@ def obstacles_filter(abs_mmw, pos, dims, tops, offset_x=VIC_OFF_X, offset_y=VIC_
         tmp1[tmp2] = True
         
         x_ = quad_dist2(tmp_, box=[dims[i][0]/2, -dims[i][0]/2, dims[i][1]/2, -dims[i][1]/2], verbose=verbose)
-        # x_[x_ == 0.] = 15
-        # plot_scene(abs_mmw, colors=x_)
-        # break
         dists.append(x_)
     dists = np.vstack(dists).T
     dists = dists.min(axis=1)
@@ -289,7 +262,6 @@ def inside_walls(abs_mmw):
     p2lw_dist = np.multiply((0. <  3.00 - t_[:, 1]), np.abs( 3.00 - t_[:, 1]))   # Distance from Left Wall
     p2rw_dist = np.multiply((0. > -3.18 - t_[:, 1]), np.abs(-3.18 - t_[:, 1]))   # Distance from Right Wall
     p2ws = np.vstack([p2bw_dist, p2fw_dist, p2lw_dist, p2rw_dist]).T
-    # print(p2ws.shape)
     return p2ws.min(axis=1)
 
 def keep_borders(pc, dims, border):
@@ -300,7 +272,6 @@ def keep_borders(pc, dims, border):
                  (pc[:, 0] > dims[0]/2-border) | (pc[:, 1] > dims[1]/2-border))
         )[0])
 
-# Generate random obstacles
 def generate_abs_bounding_obstacle(i_pos, i_dims, n_points, border=0.03):
     obstacles_x = np.random.uniform(-i_dims[0]/2, i_dims[0]/2, n_points)
     obstacles_y = np.random.uniform(-i_dims[1]/2, i_dims[1]/2, n_points)
@@ -327,7 +298,6 @@ def generate_abs_bounding_obstacles(pos, dims, tops, n_points, border=0.3, verbo
 def get_point_labels(datasets, dataset_index, path_to_json, filename="/dataset_run_4.json", scene_fn="./data/data_scene", verbose=False):
     _, abs_mmw, _, data = load_dataset(path_to_json, datasets, dataset_index, filename=filename, verbose=verbose)
     scenes = get_scenes(scene_fn)
-    # scene_index = get_scene_index(datasets[dataset_index], base_path=path_to_json)
     scene_index = data['scene_ID']
     pos, dims, tops = get_obs_info(scenes[scene_index])
 
@@ -336,24 +306,19 @@ def get_point_labels(datasets, dataset_index, path_to_json, filename="/dataset_r
         print(f" Run {datasets[dataset_index]} - Scene {scene_index} - # Obstacles: {len(pos)} ")
 
     surv = arena_filter(abs_mmw)
-    # surv.append(obstacles_filter(abs_mmw, obs_range_x, obs_range_y))
     surv = np.hstack(surv)
-
-    # abs_filt = abs_mmw[surv]
-    # plot_scene(abs_mmw, path=poses)
-
 
     labels = np.array([False]*abs_mmw.shape[0])
     labels[surv] = True
     not_labels = np.logical_not(labels)
-    # res = obstacles_filter2(abs_mmw, pos, dims, tops, verbose=True)
+    
     res, dists = obstacles_filter(abs_mmw, pos, dims, tops, verbose=verbose)
 
     labels[res] = True
     not_labels = np.logical_not(labels)
     true_obs = np.sum(labels)/len(labels)
     false_obs = np.sum(np.logical_not(labels))/len(labels)
-    # print first 3 digits of true_obs and false_obs
+
     if verbose: print(" True Obstacles:", round(true_obs*100, 2), "\n False Obstacles:", round(false_obs*100, 2))
     return labels, not_labels, pos, dims, tops
 
@@ -364,7 +329,6 @@ def compute_distv1(abs_mmw, pos, dims, tops, verbose=False):
     wall_d = np.sum(np.vstack([dq, p2ws]).T, axis=1)
     tmp1, dists = obstacles_filter(abs_mmw, pos, dims, tops, verbose=verbose)
     dists = np.vstack([dists, wall_d]).T.min(axis=1)
-    # dists[dists == 0.] = 5
     return dists
 
 def stack_labels_dists(mmw_readings, labels, dists):

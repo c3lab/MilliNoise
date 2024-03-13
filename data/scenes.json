@@ -1,1 +1,705 @@
-{"scene_0": {"obs": [{"data_pose_obj": [2.2171, 3.4852000000000003, 0.013], "topic": "/vicon/MediumObstacle1/MediumObstacle1", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.7513, 3.4882, 0.0105], "topic": "/vicon/MediumObstacle2/MediumObstacle2", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.3203, 4.4021, -1.5746], "topic": "/vicon/Obstacle7/Obstacle7", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [4.7059999999999995, 4.3974, -1.5102], "topic": "/vicon/Obstacle4/Obstacle4", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [4.2053, 4.3754, -1.5293], "topic": "/vicon/Obstacle5/Obstacle5", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.8113, 4.3979, -1.5783], "topic": "/vicon/Obstacle6/Obstacle6", "l1": 0.36, "l2": 0.49}], "ID_scene": 0, "num_obstacle": 6, "obs_topic_list": ["/vicon/MediumObstacle1/MediumObstacle1", "/vicon/MediumObstacle2/MediumObstacle2", "/vicon/Obstacle7/Obstacle7", "/vicon/Obstacle4/Obstacle4", "/vicon/Obstacle5/Obstacle5", "/vicon/Obstacle6/Obstacle6"]}, "scene_1": {"obs": [{"data_pose_obj": [2.2138999999999998, 3.9912, 0.011], "topic": "/vicon/MediumObstacle1/MediumObstacle1", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.7534, 3.9767, 0.0147], "topic": "/vicon/MediumObstacle2/MediumObstacle2", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.2091, 5.4477, 3.1337], "topic": "/vicon/Obstacle7/Obstacle7", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.7842000000000002, 5.4491, 0.0217], "topic": "/vicon/Obstacle4/Obstacle4", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.7906, 4.9546, 0.0025], "topic": "/vicon/Obstacle5/Obstacle5", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.1982, 4.9591, 3.1397], "topic": "/vicon/Obstacle6/Obstacle6", "l1": 0.36, "l2": 0.49}], "ID_scene": 1, "num_obstacle": 6, "obs_topic_list": ["/vicon/MediumObstacle1/MediumObstacle1", "/vicon/MediumObstacle2/MediumObstacle2", "/vicon/Obstacle7/Obstacle7", "/vicon/Obstacle4/Obstacle4", "/vicon/Obstacle5/Obstacle5", "/vicon/Obstacle6/Obstacle6"]}, "scene_2": {"obs": [{"data_pose_obj": [1.3223, 4.3996, -1.5626], "topic": "/vicon/Obstacle7/Obstacle7", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [4.6968, 4.4101, -1.5783], "topic": "/vicon/Obstacle4/Obstacle4", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.8878, 3.0168000000000004, -0.2594], "topic": "/vicon/Obstacle5/Obstacle5", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [4.4632000000000005, 3.3337000000000003, -1.0965], "topic": "/vicon/Obstacle6/Obstacle6", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.6, 3.9773000000000005, -3.1042], "topic": "/vicon/Obstacle0/Obstacle0", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.5979, 2.9947000000000004, -3.1354], "topic": "/vicon/Obstacle1/Obstacle1", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.4086, 2.9807, 0.0146], "topic": "/vicon/Obstacle2/Obstacle2", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.4136, 3.9717000000000002, -3.1265], "topic": "/vicon/Obstacle3/Obstacle3", "l1": 0.36, "l2": 0.49}], "ID_scene": 2, "num_obstacle": 8, "obs_topic_list": ["/vicon/Obstacle7/Obstacle7", "/vicon/Obstacle4/Obstacle4", "/vicon/Obstacle5/Obstacle5", "/vicon/Obstacle6/Obstacle6", "/vicon/Obstacle0/Obstacle0", "/vicon/Obstacle1/Obstacle1", "/vicon/Obstacle2/Obstacle2", "/vicon/Obstacle3/Obstacle3"]}, "scene_3": {"obs": [{"data_pose_obj": [3.024, 1.0524000000000002, -1.5734], "topic": "/vicon/Obstacle0/Obstacle0", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.2209, 3.5043, -3.1283], "topic": "/vicon/Obstacle1/Obstacle1", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [4.4612, 3.3277, -1.1008], "topic": "/vicon/Obstacle6/Obstacle6", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.5002, 1.0048000000000001, -3.139], "topic": "/vicon/Obstacle7/Obstacle7", "l1": 0.36, "l2": 0.49}], "ID_scene": 3, "num_obstacle": 4, "obs_topic_list": ["/vicon/Obstacle0/Obstacle0", "/vicon/Obstacle1/Obstacle1", "/vicon/Obstacle6/Obstacle6", "/vicon/Obstacle7/Obstacle7"]}, "scene_4": {"obs": [{"data_pose_obj": [4.4619, 3.3272000000000004, -1.1012], "topic": "/vicon/Obstacle6/Obstacle6", "l1": 0.36, "l2": 0.49}], "ID_scene": 4, "num_obstacle": 1, "obs_topic_list": ["/vicon/Obstacle6/Obstacle6"]}, "scene_5": {"obs": [{"data_pose_obj": [3.7331, 1.9817, -1.5561], "topic": "/vicon/MediumObstacle1/MediumObstacle1", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.6203, 3.7997, -0.0139], "topic": "/vicon/MediumObstacle3/MediumObstacle3", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.7172, 3.1643000000000003, -1.5745], "topic": "/vicon/MediumObstacle4/MediumObstacle4", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.7922, 3.7336, 0.0054], "topic": "/vicon/MediumObstacle2/MediumObstacle2", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.5256, 2.0385, 1.5698], "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.8123, 2.5746, 0.2936], "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1", "l1": 0.36, "l2": 0.49}], "ID_scene": 5, "num_obstacle": 6, "obs_topic_list": ["/vicon/MediumObstacle1/MediumObstacle1", "/vicon/MediumObstacle3/MediumObstacle3", "/vicon/MediumObstacle4/MediumObstacle4", "/vicon/MediumObstacle2/MediumObstacle2", "/vicon/ObstacleMonitor0/ObstacleMonitor0", "/vicon/ObstacleMonitor1/ObstacleMonitor1"]}, "scene_6": {"obs": [{"data_pose_obj": [3.7324, 1.9823000000000002, -1.5541], "topic": "/vicon/MediumObstacle1/MediumObstacle1", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.259, 1.6810000000000003, -1.2003], "topic": "/vicon/MediumObstacle3/MediumObstacle3", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [2.2909, 3.5987, 1.0158], "topic": "/vicon/MediumObstacle2/MediumObstacle2", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.1915, 2.3501000000000003, 1.9667], "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [1.2349, 2.9379, 1.1067], "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1", "l1": 0.36, "l2": 0.49}, {"data_pose_obj": [3.7226, 3.1716, -1.5753], "topic": "/vicon/MediumObstacle4/MediumObstacle4", "l1": 0.36, "l2": 0.49}], "ID_scene": 6, "num_obstacle": 6, "obs_topic_list": ["/vicon/MediumObstacle1/MediumObstacle1", "/vicon/MediumObstacle3/MediumObstacle3", "/vicon/MediumObstacle2/MediumObstacle2", "/vicon/ObstacleMonitor0/ObstacleMonitor0", "/vicon/ObstacleMonitor1/ObstacleMonitor1", "/vicon/MediumObstacle4/MediumObstacle4"]}, "scene_7": {"obs": [{"data_pose_obj": [3.4413, 3.3981000000000003, -3.1331], "topic": "/vicon/MediumObstacle1/MediumObstacle1", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [0.7008999999999999, 0.8394000000000001, -1.5632], "topic": "/vicon/MediumObstacle2/MediumObstacle2", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [1.6278, 0.24730000000000008, -0.011], "topic": "/vicon/MediumObstacle3/MediumObstacle3", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [3.7735, 0.2681, -3.1237], "topic": "/vicon/MediumObstacle4/MediumObstacle4", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [2.2014, 3.6566, 0.019], "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [2.7834, 4.0151, -1.5814], "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0", "l1": 0.48, "l2": 0.35, "l3": 0.25}], "ID_scene": 7, "num_obstacle": 6, "obs_topic_list": ["/vicon/MediumObstacle1/MediumObstacle1", "/vicon/MediumObstacle2/MediumObstacle2", "/vicon/MediumObstacle3/MediumObstacle3", "/vicon/MediumObstacle4/MediumObstacle4", "/vicon/ObstacleMonitor1/ObstacleMonitor1", "/vicon/ObstacleMonitor0/ObstacleMonitor0"]}, "scene_8": {"obs": [{"data_pose_obj": [3.4398, 3.476, 3.1368], "topic": "/vicon/MediumObstacle1/MediumObstacle1", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [1.6157, 0.23330000000000028, -0.0238], "topic": "/vicon/MediumObstacle3/MediumObstacle3", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [0.6918000000000002, 0.8174000000000001, -1.5561], "topic": "/vicon/MediumObstacle2/MediumObstacle2", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [3.7654, 0.27780000000000005, 3.1395], "topic": "/vicon/MediumObstacle4/MediumObstacle4", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [2.198, 3.7264, 0.0305], "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [2.792, 4.0923, -1.5721], "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0", "l1": 0.48, "l2": 0.35, "l3": 0.25}], "ID_scene": 8, "num_obstacle": 6, "obs_topic_list": ["/vicon/MediumObstacle1/MediumObstacle1", "/vicon/MediumObstacle3/MediumObstacle3", "/vicon/MediumObstacle2/MediumObstacle2", "/vicon/MediumObstacle4/MediumObstacle4", "/vicon/ObstacleMonitor1/ObstacleMonitor1", "/vicon/ObstacleMonitor0/ObstacleMonitor0"]}, "scene_9": {"obs": [{"data_pose_obj": [1.0118, 4.7015, 0.0119], "topic": "/vicon/MediumObstacle1/MediumObstacle1", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [4.0591, 4.08, -3.1393], "topic": "/vicon/MediumObstacle2/MediumObstacle2", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [1.9221, 2.5969, 1.5629], "topic": "/vicon/MediumObstacle3/MediumObstacle3", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [3.0887000000000002, 4.6004000000000005, -1.5704], "topic": "/vicon/MediumObstacle4/MediumObstacle4", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [2.0231, -0.056400000000000006, 0.7002], "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0", "l1": 0.48, "l2": 0.35, "l3": 0.25}, {"data_pose_obj": [1.4141, 0.6681000000000004, 0.7078], "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1", "l1": 0.48, "l2": 0.35, "l3": 0.25}], "ID_scene": 9, "num_obstacle": 6, "obs_topic_list": ["/vicon/MediumObstacle1/MediumObstacle1", "/vicon/MediumObstacle2/MediumObstacle2", "/vicon/MediumObstacle3/MediumObstacle3", "/vicon/MediumObstacle4/MediumObstacle4", "/vicon/ObstacleMonitor0/ObstacleMonitor0", "/vicon/ObstacleMonitor1/ObstacleMonitor1"]}}
+{
+    "scene_0": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    2.2171,
+                    3.4852000000000003,
+                    0.013
+                ],
+                "topic": "/vicon/MediumObstacle1/MediumObstacle1",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.7513,
+                    3.4882,
+                    0.0105
+                ],
+                "topic": "/vicon/MediumObstacle2/MediumObstacle2",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.3203,
+                    4.4021,
+                    -1.5746
+                ],
+                "topic": "/vicon/Obstacle7/Obstacle7",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    4.7059999999999995,
+                    4.3974,
+                    -1.5102
+                ],
+                "topic": "/vicon/Obstacle4/Obstacle4",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    4.2053,
+                    4.3754,
+                    -1.5293
+                ],
+                "topic": "/vicon/Obstacle5/Obstacle5",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.8113,
+                    4.3979,
+                    -1.5783
+                ],
+                "topic": "/vicon/Obstacle6/Obstacle6",
+                "l1": 0.36,
+                "l2": 0.49
+            }
+        ],
+        "ID_scene": 0,
+        "num_obstacle": 6,
+        "obs_topic_list": [
+            "/vicon/MediumObstacle1/MediumObstacle1",
+            "/vicon/MediumObstacle2/MediumObstacle2",
+            "/vicon/Obstacle7/Obstacle7",
+            "/vicon/Obstacle4/Obstacle4",
+            "/vicon/Obstacle5/Obstacle5",
+            "/vicon/Obstacle6/Obstacle6"
+        ]
+    },
+    "scene_1": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    2.2138999999999998,
+                    3.9912,
+                    0.011
+                ],
+                "topic": "/vicon/MediumObstacle1/MediumObstacle1",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.7534,
+                    3.9767,
+                    0.0147
+                ],
+                "topic": "/vicon/MediumObstacle2/MediumObstacle2",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.2091,
+                    5.4477,
+                    3.1337
+                ],
+                "topic": "/vicon/Obstacle7/Obstacle7",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.7842000000000002,
+                    5.4491,
+                    0.0217
+                ],
+                "topic": "/vicon/Obstacle4/Obstacle4",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.7906,
+                    4.9546,
+                    0.0025
+                ],
+                "topic": "/vicon/Obstacle5/Obstacle5",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.1982,
+                    4.9591,
+                    3.1397
+                ],
+                "topic": "/vicon/Obstacle6/Obstacle6",
+                "l1": 0.36,
+                "l2": 0.49
+            }
+        ],
+        "ID_scene": 1,
+        "num_obstacle": 6,
+        "obs_topic_list": [
+            "/vicon/MediumObstacle1/MediumObstacle1",
+            "/vicon/MediumObstacle2/MediumObstacle2",
+            "/vicon/Obstacle7/Obstacle7",
+            "/vicon/Obstacle4/Obstacle4",
+            "/vicon/Obstacle5/Obstacle5",
+            "/vicon/Obstacle6/Obstacle6"
+        ]
+    },
+    "scene_2": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    1.3223,
+                    4.3996,
+                    -1.5626
+                ],
+                "topic": "/vicon/Obstacle7/Obstacle7",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    4.6968,
+                    4.4101,
+                    -1.5783
+                ],
+                "topic": "/vicon/Obstacle4/Obstacle4",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.8878,
+                    3.0168000000000004,
+                    -0.2594
+                ],
+                "topic": "/vicon/Obstacle5/Obstacle5",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    4.4632000000000005,
+                    3.3337000000000003,
+                    -1.0965
+                ],
+                "topic": "/vicon/Obstacle6/Obstacle6",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.6,
+                    3.9773000000000005,
+                    -3.1042
+                ],
+                "topic": "/vicon/Obstacle0/Obstacle0",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.5979,
+                    2.9947000000000004,
+                    -3.1354
+                ],
+                "topic": "/vicon/Obstacle1/Obstacle1",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.4086,
+                    2.9807,
+                    0.0146
+                ],
+                "topic": "/vicon/Obstacle2/Obstacle2",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.4136,
+                    3.9717000000000002,
+                    -3.1265
+                ],
+                "topic": "/vicon/Obstacle3/Obstacle3",
+                "l1": 0.36,
+                "l2": 0.49
+            }
+        ],
+        "ID_scene": 2,
+        "num_obstacle": 8,
+        "obs_topic_list": [
+            "/vicon/Obstacle7/Obstacle7",
+            "/vicon/Obstacle4/Obstacle4",
+            "/vicon/Obstacle5/Obstacle5",
+            "/vicon/Obstacle6/Obstacle6",
+            "/vicon/Obstacle0/Obstacle0",
+            "/vicon/Obstacle1/Obstacle1",
+            "/vicon/Obstacle2/Obstacle2",
+            "/vicon/Obstacle3/Obstacle3"
+        ]
+    },
+    "scene_3": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    3.024,
+                    1.0524000000000002,
+                    -1.5734
+                ],
+                "topic": "/vicon/Obstacle0/Obstacle0",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.2209,
+                    3.5043,
+                    -3.1283
+                ],
+                "topic": "/vicon/Obstacle1/Obstacle1",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    4.4612,
+                    3.3277,
+                    -1.1008
+                ],
+                "topic": "/vicon/Obstacle6/Obstacle6",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.5002,
+                    1.0048000000000001,
+                    -3.139
+                ],
+                "topic": "/vicon/Obstacle7/Obstacle7",
+                "l1": 0.36,
+                "l2": 0.49
+            }
+        ],
+        "ID_scene": 3,
+        "num_obstacle": 4,
+        "obs_topic_list": [
+            "/vicon/Obstacle0/Obstacle0",
+            "/vicon/Obstacle1/Obstacle1",
+            "/vicon/Obstacle6/Obstacle6",
+            "/vicon/Obstacle7/Obstacle7"
+        ]
+    },
+    "scene_4": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    4.4619,
+                    3.3272000000000004,
+                    -1.1012
+                ],
+                "topic": "/vicon/Obstacle6/Obstacle6",
+                "l1": 0.36,
+                "l2": 0.49
+            }
+        ],
+        "ID_scene": 4,
+        "num_obstacle": 1,
+        "obs_topic_list": [
+            "/vicon/Obstacle6/Obstacle6"
+        ]
+    },
+    "scene_5": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    3.7331,
+                    1.9817,
+                    -1.5561
+                ],
+                "topic": "/vicon/MediumObstacle1/MediumObstacle1",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.6203,
+                    3.7997,
+                    -0.0139
+                ],
+                "topic": "/vicon/MediumObstacle3/MediumObstacle3",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.7172,
+                    3.1643000000000003,
+                    -1.5745
+                ],
+                "topic": "/vicon/MediumObstacle4/MediumObstacle4",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.7922,
+                    3.7336,
+                    0.0054
+                ],
+                "topic": "/vicon/MediumObstacle2/MediumObstacle2",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.5256,
+                    2.0385,
+                    1.5698
+                ],
+                "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.8123,
+                    2.5746,
+                    0.2936
+                ],
+                "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+                "l1": 0.36,
+                "l2": 0.49
+            }
+        ],
+        "ID_scene": 5,
+        "num_obstacle": 6,
+        "obs_topic_list": [
+            "/vicon/MediumObstacle1/MediumObstacle1",
+            "/vicon/MediumObstacle3/MediumObstacle3",
+            "/vicon/MediumObstacle4/MediumObstacle4",
+            "/vicon/MediumObstacle2/MediumObstacle2",
+            "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+            "/vicon/ObstacleMonitor1/ObstacleMonitor1"
+        ]
+    },
+    "scene_6": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    3.7324,
+                    1.9823000000000002,
+                    -1.5541
+                ],
+                "topic": "/vicon/MediumObstacle1/MediumObstacle1",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.259,
+                    1.6810000000000003,
+                    -1.2003
+                ],
+                "topic": "/vicon/MediumObstacle3/MediumObstacle3",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    2.2909,
+                    3.5987,
+                    1.0158
+                ],
+                "topic": "/vicon/MediumObstacle2/MediumObstacle2",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.1915,
+                    2.3501000000000003,
+                    1.9667
+                ],
+                "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    1.2349,
+                    2.9379,
+                    1.1067
+                ],
+                "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+                "l1": 0.36,
+                "l2": 0.49
+            },
+            {
+                "data_pose_obj": [
+                    3.7226,
+                    3.1716,
+                    -1.5753
+                ],
+                "topic": "/vicon/MediumObstacle4/MediumObstacle4",
+                "l1": 0.36,
+                "l2": 0.49
+            }
+        ],
+        "ID_scene": 6,
+        "num_obstacle": 6,
+        "obs_topic_list": [
+            "/vicon/MediumObstacle1/MediumObstacle1",
+            "/vicon/MediumObstacle3/MediumObstacle3",
+            "/vicon/MediumObstacle2/MediumObstacle2",
+            "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+            "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+            "/vicon/MediumObstacle4/MediumObstacle4"
+        ]
+    },
+    "scene_7": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    3.4413,
+                    3.3981000000000003,
+                    -3.1331
+                ],
+                "topic": "/vicon/MediumObstacle1/MediumObstacle1",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    0.7008999999999999,
+                    0.8394000000000001,
+                    -1.5632
+                ],
+                "topic": "/vicon/MediumObstacle2/MediumObstacle2",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    1.6278,
+                    0.24730000000000008,
+                    -0.011
+                ],
+                "topic": "/vicon/MediumObstacle3/MediumObstacle3",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    3.7735,
+                    0.2681,
+                    -3.1237
+                ],
+                "topic": "/vicon/MediumObstacle4/MediumObstacle4",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    2.2014,
+                    3.6566,
+                    0.019
+                ],
+                "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    2.7834,
+                    4.0151,
+                    -1.5814
+                ],
+                "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            }
+        ],
+        "ID_scene": 7,
+        "num_obstacle": 6,
+        "obs_topic_list": [
+            "/vicon/MediumObstacle1/MediumObstacle1",
+            "/vicon/MediumObstacle2/MediumObstacle2",
+            "/vicon/MediumObstacle3/MediumObstacle3",
+            "/vicon/MediumObstacle4/MediumObstacle4",
+            "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+            "/vicon/ObstacleMonitor0/ObstacleMonitor0"
+        ]
+    },
+    "scene_8": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    3.4398,
+                    3.476,
+                    3.1368
+                ],
+                "topic": "/vicon/MediumObstacle1/MediumObstacle1",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    1.6157,
+                    0.23330000000000028,
+                    -0.0238
+                ],
+                "topic": "/vicon/MediumObstacle3/MediumObstacle3",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    0.6918000000000002,
+                    0.8174000000000001,
+                    -1.5561
+                ],
+                "topic": "/vicon/MediumObstacle2/MediumObstacle2",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    3.7654,
+                    0.27780000000000005,
+                    3.1395
+                ],
+                "topic": "/vicon/MediumObstacle4/MediumObstacle4",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    2.198,
+                    3.7264,
+                    0.0305
+                ],
+                "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    2.792,
+                    4.0923,
+                    -1.5721
+                ],
+                "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            }
+        ],
+        "ID_scene": 8,
+        "num_obstacle": 6,
+        "obs_topic_list": [
+            "/vicon/MediumObstacle1/MediumObstacle1",
+            "/vicon/MediumObstacle3/MediumObstacle3",
+            "/vicon/MediumObstacle2/MediumObstacle2",
+            "/vicon/MediumObstacle4/MediumObstacle4",
+            "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+            "/vicon/ObstacleMonitor0/ObstacleMonitor0"
+        ]
+    },
+    "scene_9": {
+        "obs": [
+            {
+                "data_pose_obj": [
+                    1.0118,
+                    4.7015,
+                    0.0119
+                ],
+                "topic": "/vicon/MediumObstacle1/MediumObstacle1",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    4.0591,
+                    4.08,
+                    -3.1393
+                ],
+                "topic": "/vicon/MediumObstacle2/MediumObstacle2",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    1.9221,
+                    2.5969,
+                    1.5629
+                ],
+                "topic": "/vicon/MediumObstacle3/MediumObstacle3",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    3.0887000000000002,
+                    4.6004000000000005,
+                    -1.5704
+                ],
+                "topic": "/vicon/MediumObstacle4/MediumObstacle4",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    2.0231,
+                    -0.056400000000000006,
+                    0.7002
+                ],
+                "topic": "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            },
+            {
+                "data_pose_obj": [
+                    1.4141,
+                    0.6681000000000004,
+                    0.7078
+                ],
+                "topic": "/vicon/ObstacleMonitor1/ObstacleMonitor1",
+                "l1": 0.48,
+                "l2": 0.35,
+                "l3": 0.25
+            }
+        ],
+        "ID_scene": 9,
+        "num_obstacle": 6,
+        "obs_topic_list": [
+            "/vicon/MediumObstacle1/MediumObstacle1",
+            "/vicon/MediumObstacle2/MediumObstacle2",
+            "/vicon/MediumObstacle3/MediumObstacle3",
+            "/vicon/MediumObstacle4/MediumObstacle4",
+            "/vicon/ObstacleMonitor0/ObstacleMonitor0",
+            "/vicon/ObstacleMonitor1/ObstacleMonitor1"
+        ]
+    }
+}
